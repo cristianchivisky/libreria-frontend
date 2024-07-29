@@ -8,7 +8,8 @@ export default async function PromocionBanner() {
     const filteredPromos = promociones.filter((promo: promocion) => {
         const fechaInicio = new Date(promo.fechaInicio)
         const fechaFin = new Date(promo.fechaFin)
-        return currentDate >= fechaInicio && currentDate <= fechaFin
+        const hasImage = promo.imagen && promo.imagen.trim() !== '';
+        return currentDate >= fechaInicio && currentDate <= fechaFin && hasImage;
     })
     if (filteredPromos.length === 0) return null
     return (

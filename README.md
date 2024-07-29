@@ -4,11 +4,11 @@ LibroMundo es un proyecto de librería online diseñado para ofrecer una experie
 
 ## Sistema Web
 
-Frontend: Desarrollado con Next.js y Tailwind CSS para un diseño adaptable y atractivo.
-Backend: Servidor GraphQL.
-Base de Datos: PostgreSQL.
-Integración de Logging: Google y Microsoft.
-API de Pago: Integración con Mercado Pago.
+- Frontend: Desarrollado con Next.js y Tailwind CSS para un diseño adaptable y atractivo.
+- Backend: Servidor GraphQL.
+- Base de Datos: PostgreSQL.
+- Integración de Logging: Google y Microsoft.
+- API de Pago: Integración con Mercado Pago.
 
 ## Características del Sitio Web
 
