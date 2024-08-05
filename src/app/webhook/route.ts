@@ -3,7 +3,7 @@ import { ejemplar } from '@/types/ejemplar'
 import { MercadoPagoConfig, Payment, PaymentRefund, Preference } from 'mercadopago'
 
 const client = new MercadoPagoConfig({
-    accessToken: 'TEST-876248817619970-111419-3c01d2fa781f6c10c3b10cef9659a800-1548518089',
+    accessToken: `${process.env.MERCADOPAGO_ACCESS_TOKEN}`,
     options: { timeout: 5000, idempotencyKey: 'abc' },
 })
 

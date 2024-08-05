@@ -35,8 +35,10 @@ export default function MicrosoftLoginButton() {
     }, [])
 
     function handleClick() {
+        const clientId = process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID
+        const redirectUri = `${process.env.NEXT_PUBLIC_FRONT_URL}ingresar`
         router.push(
-            'https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=10f88338-8bd0-45ac-a3c9-5f68ca25dc8b&response_type=code&redirect_uri=http://localhost:3000/ingresar&response_mode=query&scope=user.read'
+            `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&response_mode=query&scope=user.read`
         )
     }
 

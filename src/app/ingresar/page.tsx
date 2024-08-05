@@ -9,7 +9,7 @@ export default function Ingresar() {
             <div className="flex h-[260px] w-[360px] flex-col justify-center gap-4 rounded-lg border bg-[url('../../public/LoginBg.png')] bg-cover bg-center bg-no-repeat px-6 md:h-[305px] md:w-[460px] md:px-12">
                 <p className="text-center text-2xl font-semibold text-white">Ingresar</p>
                 <MicrosoftLoginButton />
-                <GoogleOAuthProvider clientId="922082614639-te6q4juqlgmiqomf96n0jq2p2go4bnqa.apps.googleusercontent.com">
+                <GoogleOAuthProvider clientId={`${process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}`}>
                     <GoogleLoginButton />
                 </GoogleOAuthProvider>
             </div>
